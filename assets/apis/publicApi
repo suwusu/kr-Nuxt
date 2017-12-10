@@ -1,0 +1,6 @@
+module.exports = {
+    "get-url":{
+        url:'/api/krspaceop-web/sys/upload',
+        method:'get'
+    }
+}

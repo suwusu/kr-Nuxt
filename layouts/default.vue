@@ -70,16 +70,16 @@
             <Menu active-name="1" theme="dark" width="auto">
               <div class="layout-logo-left"></div>
               <MenuItem name="1">
-                <Icon type="ios-navigate" :size="iconSize"></Icon>
-                <span class="layout-text">案例演示</span>
+                
+                <nuxt-link to="/"><Icon type="ios-navigate" :size="iconSize"></Icon><span  class="layout-text">案例演示</span></nuxt-link>
               </MenuItem>
               <MenuItem name="2">
-                <Icon type="ios-keypad" :size="iconSize"></Icon>
-                <span class="layout-text">前车之鉴</span>
+               
+                <nuxt-link to="/demo/yihao"> <Icon type="ios-keypad" :size="iconSize"></Icon><span  class="layout-text">前车之鉴</span></nuxt-link>
               </MenuItem>
               <MenuItem name="3">
-                <Icon type="ios-analytics" :size="iconSize"></Icon>
-                <span class="layout-text">故事分享</span>
+               
+                <nuxt-link to="/demo/liu"> <Icon type="ios-analytics" :size="iconSize"></Icon><span  class="layout-text">故事分享</span></nuxt-link>
               </MenuItem>
             </Menu>
           </Col>
@@ -113,7 +113,7 @@
               </div>
             </div>
               <div class="layout-copy">
-                &copy;  2011~2016 36氪 | 京ICP备12031756号 | 京公网安备11010802012285号
+                <!-- &copy;  2011~2016 36氪 | 京ICP备12031756号 | 京公网安备11010802012285号 -->
               </div>
           </Col>
         </Row>
@@ -121,6 +121,7 @@
 </template>
 <script>
   export default {
+     transition: 'bounce',
     data () {
       return {
         spanLeft: 5,
