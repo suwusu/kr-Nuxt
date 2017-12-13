@@ -10,6 +10,10 @@ import Nuxt from './components/nuxt.vue'
 import App from './App.vue'
 import { getContext, getLocation } from './utils'
 import { createStore } from './store.js'
+<<<<<<< HEAD
+=======
+import plugin0 from 'plugin0'
+>>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
 
 
 // Component: <no-ssr>
@@ -140,6 +144,12 @@ async function createApp (ssrContext) {
 
   
   
+<<<<<<< HEAD
+=======
+  if (process.browser) { 
+    if (typeof plugin0 === 'function') await plugin0(ctx, inject)
+  }
+>>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
 
   if (process.server && ssrContext && ssrContext.url) {
     await new Promise((resolve, reject) => {

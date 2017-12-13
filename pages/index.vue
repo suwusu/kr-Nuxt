@@ -1,17 +1,8 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
-      <h1 class="title">
-        kr-nuxt
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
+     <Button type="primary">index</Button>
+     
     </div>
   </section>
 </template>
@@ -20,6 +11,10 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  transition (to, from) {
+      if (!from) return 'slide-left'
+      return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
   components: {
     Logo
   }
