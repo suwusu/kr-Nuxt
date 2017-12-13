@@ -3,9 +3,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+<<<<<<< HEAD
+const _24f997e4 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+=======
 const _70a3ea24 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages\\index" */).then(m => m.default || m)
 const _722e99e7 = () => import('..\\pages\\demo\\liu.vue' /* webpackChunkName: "pages\\demo\\liu" */).then(m => m.default || m)
 const _61862fd6 = () => import('..\\pages\\demo\\yihao.vue' /* webpackChunkName: "pages\\demo\\yihao" */).then(m => m.default || m)
+>>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
 
 
 
@@ -43,6 +47,10 @@ export function createRouter () {
     routes: [
 		{
 			path: "/",
+<<<<<<< HEAD
+			component: _24f997e4,
+			name: "index"
+=======
 			component: _70a3ea24,
 			name: "index"
 		},
@@ -55,6 +63,7 @@ export function createRouter () {
 			path: "/demo/yihao",
 			component: _61862fd6,
 			name: "demo-yihao"
+>>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
 		}
     ],
     fallback: false

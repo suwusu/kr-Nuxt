@@ -9,6 +9,12 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
+<<<<<<< HEAD
+
+let layouts = {
+
+  "_default": () => import('../layouts/default.vue'  /* webpackChunkName: "layouts/default" */).then(m => m.default || m)
+=======
 import '..\\node_modules\\iview\\dist\\styles\\iview.css'
 
 import '..\\assets\\main.css'
@@ -17,6 +23,7 @@ import '..\\assets\\main.css'
 let layouts = {
 
   "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts\\default" */).then(m => m.default || m)
+>>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
 
 }
 
