@@ -9,16 +9,7 @@
     "start": "export BASE_URL=http://optest.krspace.cn && nuxt ",
     "starts": "export NODE_ENV=test && nuxt ",
     "generate": "nuxt generate",
-<<<<<<< HEAD
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "iview": "^2.7.3",
-    "nuxt": "^1.0.0-rc11"
-=======
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 17b3c96c4143ab85f098fe45f7a62d056a950536
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
-    "vue-dateutils": "^1.0.8"
+    "vue-dateutils": "^1.0.8",
+    "vue-pdf": "^2.0.4"
   }
 }
