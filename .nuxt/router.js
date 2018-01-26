@@ -3,9 +3,9 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _70a3ea24 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages\\index" */).then(m => m.default || m)
-const _722e99e7 = () => import('..\\pages\\demo\\liu.vue' /* webpackChunkName: "pages\\demo\\liu" */).then(m => m.default || m)
-const _61862fd6 = () => import('..\\pages\\demo\\yihao.vue' /* webpackChunkName: "pages\\demo\\yihao" */).then(m => m.default || m)
+const _217cb42c = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages\\index" */).then(m => m.default || m)
+const _16031fef = () => import('..\\pages\\demo\\liu.vue' /* webpackChunkName: "pages\\demo\\liu" */).then(m => m.default || m)
+const _5fefe7c6 = () => import('..\\pages\\demo\\yihao.vue' /* webpackChunkName: "pages\\demo\\yihao" */).then(m => m.default || m)
 
 
 
@@ -43,17 +43,17 @@ export function createRouter () {
     routes: [
 		{
 			path: "/",
-			component: _70a3ea24,
+			component: _217cb42c,
 			name: "index"
 		},
 		{
 			path: "/demo/liu",
-			component: _722e99e7,
+			component: _16031fef,
 			name: "demo-liu"
 		},
 		{
 			path: "/demo/yihao",
-			component: _61862fd6,
+			component: _5fefe7c6,
 			name: "demo-yihao"
 		}
     ],

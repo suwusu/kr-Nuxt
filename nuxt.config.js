@@ -14,5 +14,5 @@ module.exports = {
     ]
   },
   plugins: [ { src: '~plugins/iview', ssr: false } ],
-  css: ['iview/dist/styles/iview.css','assets/main.css'],
+  css: ['iview/dist/styles/iview.css',],
 }

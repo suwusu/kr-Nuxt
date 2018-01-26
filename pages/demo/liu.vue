@@ -1,13 +1,13 @@
 <template>
-  <pdf src="/Images.pdf"></pdf>
+  <VuePdf pdfurl="/git/git.pdf"></VuePdf>
 </template>
 
 <script>
-import pdf from 'vue-pdf'
-
+import VuePdf from '~/components/VuePdf'
+// import pdfurl from '~/plugins/Images.pdf'
 export default {
   components: {
-    pdf
+    VuePdf
   }
 }
 </script>
