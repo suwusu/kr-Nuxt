@@ -1,14 +1,14 @@
 <template>
   <section class="container">
     <div>
-     <Button type="primary">yihao</Button>
+     <krInput />
      
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import krInput from '~/components/krInput.vue'
 
 export default {
      transition (to, from) {
@@ -16,7 +16,7 @@ export default {
         return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
     },
     components: {
-        Logo
+        krInput
     }
 }
 </script>
